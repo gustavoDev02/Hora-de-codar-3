@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-5</title>
+
+    <script>
+
+        var n1 = parseInt(prompt(`Digite o primeiro número: `));
+        var n2 = parseInt(prompt(`Digite o segundo número: `));
+
+        var cont = 0;
+        var soma = 0;
+
+        for(var numero = n1; numero <= n2; numero++){
+            var soma = soma + numero;
+            var cont = cont + 1;
+        }
+
+        var media = soma / cont;
+
+        document.write(`A média aritmética dos números é: ${media}`);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

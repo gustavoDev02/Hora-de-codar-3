@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-7</title>
+
+    <script>
+
+        var soma = 0;
+
+        for(var i = 0; i < 6 ; i++){
+            var n1 = parseFloat(prompt(`Digite nota: `));
+
+            while(n1 < 0 || n1 > 10){
+               n1 = parseFloat(prompt(`Digite um novo valor valido`)); 
+            }
+
+            soma+=n1;
+        }
+        
+        var media = soma / i;
+       
+        document.write(`A média do aluno é de : ${media.toFixed(2)} `);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

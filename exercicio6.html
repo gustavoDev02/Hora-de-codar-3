@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-6</title>
+
+    <script>
+
+        var alunoAprovado = 0;
+        var soma = 0;
+        var resposta = "S";
+        var cont = 0;
+
+        while(resposta === "S"){
+            var n1 = parseFloat(prompt(`Digite a primeira nota: `));
+            var n2 = parseFloat(prompt(`Digite a segundo nota: `));
+
+            var media = (n1 + n2) /2;
+
+            if(media >= 9.5){
+                alunoAprovado ++;
+            }
+
+            cont++;
+
+            document.write(`A média do ${cont}° aluno é de: ${media} <p>`);
+
+            resposta = prompt(`Calcular a média de outro aluno Sim/Não?: `);
+        }
+
+        document.write(`Quantidade de alunos aprovados: ${alunoAprovado}`);
+
+    </script>
+</head>
+<body>
+</body>
+</html>
